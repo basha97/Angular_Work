@@ -372,6 +372,28 @@ export const navigation: FuseNavigation[] = [
         ]
     },
     {
+        id       : 'api',
+        title    : 'Api',
+        type     : 'group',
+        icon     : 'pages',
+        children : [
+            {
+                id   : 'profile',
+                title: 'Profile',
+                type : 'item',
+                icon : 'help',
+                url  : '/api/profile'
+            },
+            {
+                id   : 'contact',
+                title: 'Contact',
+                type : 'item',
+                icon : 'help',
+                url  : '/api/contact'
+            },
+        ]
+    },
+    {
         id      : 'user-interface',
         title   : 'User Interface',
         type    : 'group',

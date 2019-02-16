@@ -42,17 +42,18 @@ const appRoutes: Routes = [
         loadChildren: './main/angular-material-elements/angular-material-elements.module#AngularMaterialElementsModule'
     },
     {
+        path      : 'api',
+        loadChildren:  './main/api/api.module#ApiModule'
+    },
+    {
         path      : '**',
         redirectTo: '/pages/auth/login'
     },
     {
         path      : 'dashboard',
         redirectTo: 'apps/dashboards/analytics'
-    },
-    // {
-    //     path      : 'basha',
-    //     redirectTo:  './main/basha/basha.module#BashaModule'
-    // }
+    }
+    
 ];
 
 @NgModule({
